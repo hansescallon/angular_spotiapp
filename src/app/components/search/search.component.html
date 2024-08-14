@@ -1,1 +1,23 @@
-<p>search works!</p>
+<div class="row">
+<div class="col">
+  <input #termino type="text" (keyup)="buscar(termino.value)">
+</div>
+
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="card-columns" *ngFor="let artistas of artistaBuscado">
+
+  <div class="card" style="width: 18rem;" >
+    <img [src]= artistas.images[0].url class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{artistas.name}}</h5>
+      <p class="card-text" ><span class="badge text-bg-primary" *ngFor="let artista2 of artistas.artists">{{artista2.name}}</span></p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  </div>
+  |</div>
+
+

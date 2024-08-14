@@ -10,7 +10,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
 //Importar rutas
 import { ROUTES } from './app.routes';
-
+//importtar servicios
 @NgModule({
   declarations: [
     AppComponent,
