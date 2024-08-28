@@ -10,6 +10,10 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
 //Importar rutas
 import { ROUTES } from './app.routes';
+//Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { LoadindComponent } from './components/loading/loadind.component';
 //importtar servicios
 @NgModule({
   declarations: [
@@ -17,7 +21,10 @@ import { ROUTES } from './app.routes';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadindComponent
   ],
   imports: [
     BrowserModule,

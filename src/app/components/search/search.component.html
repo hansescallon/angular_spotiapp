@@ -5,7 +5,9 @@
 
 </div>
 
-
+<app-loadind *ngIf="mostrarLoading"></app-loadind>
+<app-tarjetas [items]=artistaBuscado></app-tarjetas>
+<!--
 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="card-columns" *ngFor="let artistas of artistaBuscado">
 
@@ -19,5 +21,5 @@
   </div>
   </div>
   |</div>
-
+-->
 
