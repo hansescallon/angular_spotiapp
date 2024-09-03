@@ -29,7 +29,9 @@
         <td><img class= "img-thumb" [src]="track.album.images | noimage" alt=""></td>
         <td>{{track.album.name}}</td>
         <td>{{track.name}}</td>
-        <td><audio [src]="track.preview_url" controls></audio>     </td>
+       <!--  <td><audio [src]="track.preview_url" controls></audio>     </td>  -->
+       <iframe style="border-radius:12px" [src]="track.uri | domseguro" width="300" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
       </tr>
 
 
